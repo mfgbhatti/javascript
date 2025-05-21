@@ -1,0 +1,62 @@
+:root{
+  --color: #5271ff;
+  /* --color: #00C2C7; */
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #010a01;
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_640.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px var(--color),
+    0 0 82px var(--color), 0 0 92px var(--color), 0 0 102px var(--color), 0 0 151px var(--color);
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 5.2rem;
+  animation: pulsate 0.11s ease-in-out infinite alternate;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px var(--color),
+      0 0 80px var(--color), 0 0 90px var(--color), 0 0 100px var(--color), 0 0 150px var(--color);
+  }
+
+  0% {
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px var(--color),
+      0 0 73px var(--color), 0 0 80px var(--color), 0 0 94px var(--color), 0 0 140px var(--color);
+  }
+}
+
+.wrapper {
+  font-size: 18px;
+  display: flex;
+  color: #fff;
+  margin-top: 10em;
+  font-family: "Yellowtail", sans-serif;
+}
+
+.container {
+  margin: 0 30px;
+}
+
+.hidden {
+  display: none;
+}
